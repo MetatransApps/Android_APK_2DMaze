@@ -33,10 +33,6 @@
         android:theme="@style/AppTheme"
         android:name="com.maze_squirrel.app.Application_Maze_AllAds">
 
-
-        <meta-data android:name="com.google.android.gms.version" android:value="12451000" />
-        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-5558070192233978~9617211649"/>
-        
         
         <activity
   			android:name="org.metatrans.commons.web.Activity_WebView_StatePreservingImpl_With_VideoPlayer"
@@ -152,12 +148,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        
-        <!-- Admob -->
-        <activity android:name="com.google.android.gms.ads.AdActivity"
-             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-             android:theme="@android:style/Theme.Translucent" />
 		
     </application>
 
