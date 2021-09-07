@@ -85,8 +85,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
   		</activity>
-  		
-        
+
+
+        <activity
+            android:name="org.metatrans.commons.ads.impl.providers.home_ads.website.Activity_Marketing_Website_Pages"
+            android:icon="@drawable/ic_colours_tube"
+            android:label="@string/label_moregames"
+            android:theme="@style/AppBaseTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
         <activity
   			android:name="org.metatrans.commons.menu.Activity_Menu_Colours_Base"
   			android:icon="@drawable/ic_rainbow"

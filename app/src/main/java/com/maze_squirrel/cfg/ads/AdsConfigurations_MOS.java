@@ -8,6 +8,12 @@ import org.metatrans.commons.ads.api.IAdsConfigurations;
 import org.metatrans.commons.ads.api.IAdsProviders;
 import org.metatrans.commons.ads.impl.IAdsContainer;
 import org.metatrans.commons.ads.impl.providers.home_ads.AdsContainer_HomeAds;
+import org.metatrans.commons.ads.impl.providers.home_ads.AdsContainer_HomeAds_BaseImpl;
+import org.metatrans.commons.ads.impl.providers.home_ads.AdsContainer_HomeAds_Composite;
+import org.metatrans.commons.ads.impl.providers.home_ads.website.AdsContainer_HomeAds_PureC;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class AdsConfigurations_MOS implements IAdsConfigurations {
@@ -15,8 +21,7 @@ public class AdsConfigurations_MOS implements IAdsConfigurations {
 	
 	protected int[] PROVIDERS_BANNERS;
 	protected int[] PROVIDERS_INTERSTITIAL;
-
-	private IAdsContainer container_google;
+	
 	private IAdsContainer container_home;
 	
 	
@@ -30,7 +35,11 @@ public class AdsConfigurations_MOS implements IAdsConfigurations {
 												IAdsProviders.ID_HOME_ADS,
 											};
 
-		container_home = new AdsContainer_HomeAds(context, getProviderConfiguration(IAdsProviders.ID_HOME_ADS));
+		List<AdsContainer_HomeAds_BaseImpl> homeContainers = new ArrayList<AdsContainer_HomeAds_BaseImpl>();
+		homeContainers.add(new AdsContainer_HomeAds(context, getProviderConfiguration(IAdsProviders.ID_HOME_ADS)));
+		homeContainers.add(new AdsContainer_HomeAds_PureC(context, getProviderConfiguration(IAdsProviders.ID_HOME_ADS)));
+
+		container_home = new AdsContainer_HomeAds_Composite(context, homeContainers);
 	}
 	
 	
