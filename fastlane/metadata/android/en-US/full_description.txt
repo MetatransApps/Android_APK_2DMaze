@@ -1,0 +1,12 @@
+<p>Do you like maze games? Give it a try! Inspired by love to maze, labyrinth, we created а game for resolving easy to very hard maze, labyrinth, which is each time different. The game is old school with simple graphics. There are also enemies in some levels, which makes the game more difficult. You can collect acorns and attack the enemies. The goal is to release the squirrel by finding the key and the exit. Meanwhile, if you collect 3 starts you go to the next level. Can you release the squirrel?</p>
+<p>The game is supporting different playing levels as well as more other features, like:</p>
+<ol>
+<li>High scores - keeps track of your best result.</li>
+<li>Supports different color palettes for different tastes.</li>
+<li>Supports tablets and phones.</li>
+<li>Increasing difficulties and sizes of maze, labyrinths.</li>
+<li>Each time different maze, labyrinths.</li></ol>
+
+<p>Your feedback and/or review is more than welcome.</p>
+
+https://metatransapps.com/maze-runner-2d-old-school-labyrinth-offline-game/

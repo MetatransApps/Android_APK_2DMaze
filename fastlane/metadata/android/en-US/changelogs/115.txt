@@ -1,0 +1,5 @@
+1.1.5 (28.10.2021) 
+Investment into the User Interface and User Experience. We hope you enjoy the new design!
+
+1.0.3 (21.08.2021)
+Technical debt: Migration of the development environment, from Eclipse to Android Studio.
