@@ -35,9 +35,10 @@ public class AdsConfigurations_MOS implements IAdsConfigurations {
 												IAdsProviders.ID_HOME_ADS,
 											};
 
+
 		List<AdsContainer_HomeAds_BaseImpl> homeContainers = new ArrayList<AdsContainer_HomeAds_BaseImpl>();
+
 		homeContainers.add(new AdsContainer_HomeAds(context, getProviderConfiguration(IAdsProviders.ID_HOME_ADS)));
-		homeContainers.add(new AdsContainer_HomeAds_PureC(context, getProviderConfiguration(IAdsProviders.ID_HOME_ADS)));
 
 		container_home = new AdsContainer_HomeAds_Composite(context, homeContainers);
 	}
