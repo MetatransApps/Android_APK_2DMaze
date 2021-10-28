@@ -1,4 +1,4 @@
-package com.maze_squirrel.cfg.ads;
+package org.metatrans.apps.maze.cfg.ads;
 
 
 import android.content.Context;
@@ -8,11 +8,11 @@ import org.metatrans.commons.ads.api.IAdsConfigurations;
 import org.metatrans.commons.ads.api.IAdsProviders;
 import org.metatrans.commons.ads.impl.IAdsContainer;
 import org.metatrans.commons.ads.impl.providers.home_ads.AdsContainer_HomeAds;
-import org.metatrans.commons.ads.impl.providers.home_ads.AdsContainer_HomeAds_BaseImpl;
+/*import org.metatrans.commons.ads.impl.providers.home_ads.AdsContainer_HomeAds_BaseImpl;
 import org.metatrans.commons.ads.impl.providers.home_ads.AdsContainer_HomeAds_Composite;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.List;*/
 
 
 public class AdsConfigurations_MOS implements IAdsConfigurations {
@@ -35,11 +35,14 @@ public class AdsConfigurations_MOS implements IAdsConfigurations {
 											};
 
 
-		List<AdsContainer_HomeAds_BaseImpl> homeContainers = new ArrayList<AdsContainer_HomeAds_BaseImpl>();
+		container_home = new AdsContainer_HomeAds(context, getProviderConfiguration(IAdsProviders.ID_HOME_ADS));
+
+
+		/*List<AdsContainer_HomeAds_BaseImpl> homeContainers = new ArrayList<AdsContainer_HomeAds_BaseImpl>();
 
 		homeContainers.add(new AdsContainer_HomeAds(context, getProviderConfiguration(IAdsProviders.ID_HOME_ADS)));
 
-		container_home = new AdsContainer_HomeAds_Composite(context, homeContainers);
+		container_home = new AdsContainer_HomeAds_Composite(context, homeContainers);*/
 	}
 	
 	

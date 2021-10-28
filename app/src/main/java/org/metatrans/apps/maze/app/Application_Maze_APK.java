@@ -1,13 +1,12 @@
-package com.maze_squirrel.app;
+package org.metatrans.apps.maze.app;
 
 
+import org.metatrans.apps.maze.cfg.ads.AdsConfigurations_MOS;
 import org.metatrans.commons.ads.api.IAdsConfigurations;
 import org.metatrans.commons.cfg.appstore.IAppStore;
 
-import com.maze_squirrel.cfg.ads.AdsConfigurations_MOS;
 
-
-public class Application_Maze_AllAds extends Application_Maze {
+public class Application_Maze_APK extends Application_Maze {
 
 
 	@Override

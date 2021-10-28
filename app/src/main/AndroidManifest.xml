@@ -31,7 +31,7 @@
         android:icon="@drawable/ic_logo_maze"
         android:label="@string/app_mos_name"
         android:theme="@style/AppTheme"
-        android:name="com.maze_squirrel.app.Application_Maze_AllAds">
+        android:name="org.metatrans.apps.maze.app.Application_Maze_APK">
 
 
         <activity
@@ -42,7 +42,7 @@
 
 
         <activity
-            android:name="com.maze_squirrel.menu.Activity_Menu_Main"
+            android:name="org.metatrans.apps.maze.menu.Activity_Menu_Main"
             android:label="@string/menu_main"
             android:theme="@style/AppTheme" >
             <intent-filter>
@@ -53,7 +53,7 @@
 
 
         <activity
-            android:name="com.maze_squirrel.main.Activity_Result"
+            android:name="org.metatrans.apps.maze.main.Activity_Result"
             android:icon="@drawable/ic_colours_tube"
             android:theme="@style/AppTheme">
             <intent-filter>
@@ -64,7 +64,7 @@
 
 
         <activity
-            android:name="com.maze_squirrel.menu.Activity_Menu_Levels"
+            android:name="org.metatrans.apps.maze.menu.Activity_Menu_Levels"
             android:icon="@drawable/ic_rainbow"
             android:label="@string/levels"
             android:theme="@style/AppTheme">
@@ -136,7 +136,7 @@
 
 
         <activity
-            android:name="com.maze_squirrel.loading.Activity_Loading"
+            android:name="org.metatrans.apps.maze.loading.Activity_Loading"
             android:label="@string/app_mos_name">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
@@ -146,7 +146,7 @@
 
 
         <activity
-            android:name="com.maze_squirrel.main.Activity_Main"
+            android:name="org.metatrans.apps.maze.main.Activity_Main"
             android:label="@string/app_mos_name"
             android:screenOrientation="landscape"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
