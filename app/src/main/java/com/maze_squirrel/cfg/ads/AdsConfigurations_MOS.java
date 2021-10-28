@@ -10,7 +10,6 @@ import org.metatrans.commons.ads.impl.IAdsContainer;
 import org.metatrans.commons.ads.impl.providers.home_ads.AdsContainer_HomeAds;
 import org.metatrans.commons.ads.impl.providers.home_ads.AdsContainer_HomeAds_BaseImpl;
 import org.metatrans.commons.ads.impl.providers.home_ads.AdsContainer_HomeAds_Composite;
-import org.metatrans.commons.ads.impl.providers.home_ads.website.AdsContainer_HomeAds_PureC;
 
 import java.util.ArrayList;
 import java.util.List;
