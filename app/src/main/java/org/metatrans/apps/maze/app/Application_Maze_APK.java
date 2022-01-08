@@ -9,14 +9,24 @@ import org.metatrans.commons.cfg.appstore.IAppStore;
 public class Application_Maze_APK extends Application_Maze {
 
 
+	protected IAdsConfigurations adsConfigurations;
+
+
 	@Override
 	public IAppStore getAppStore() {
 		return IAppStore.OBJ_FDROID_OFFICIAL;
 	}
 
 
-	protected IAdsConfigurations adsConfigurations = new AdsConfigurations_MOS(this);
+	@Override
+	public void onCreate() {
 
+		super.onCreate();
+
+		adsConfigurations = new AdsConfigurations_MOS(this);
+
+	}
+	
 	
 	@Override
 	public IAdsConfigurations getAdsConfigurations() {
