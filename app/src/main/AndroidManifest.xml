@@ -1,5 +1,4 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.maze_squirrel"
     android:installLocation="auto">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -44,7 +43,20 @@
         <activity
             android:name="org.metatrans.apps.maze.menu.Activity_Menu_Main"
             android:label="@string/menu_main"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/AppTheme"
+            android:exported="false">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="org.metatrans.commons.graphics2d.menu.Activity_Menu_Joystick"
+            android:label="@string/menu_joystick"
+            android:theme="@style/AppTheme"
+            android:exported="false">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -55,7 +67,8 @@
         <activity
             android:name="org.metatrans.apps.maze.main.Activity_Result"
             android:icon="@drawable/ic_colours_tube"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:exported="false">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -67,7 +80,8 @@
             android:name="org.metatrans.apps.maze.menu.Activity_Menu_Levels"
             android:icon="@drawable/ic_rainbow"
             android:label="@string/levels"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:exported="false">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -79,7 +93,8 @@
             android:name="org.metatrans.commons.marketing.Activity_Marketing_AppList"
             android:icon="@drawable/ic_colours_tube"
             android:label="@string/label_moregames"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:exported="false">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -91,7 +106,8 @@
             android:name="org.metatrans.commons.menu.Activity_Menu_Colours_Base"
             android:icon="@drawable/ic_rainbow"
             android:label="@string/menu_colour_scheme"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:exported="false">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -103,7 +119,8 @@
             android:name="org.metatrans.commons.engagement.achievements.Activity_Achievements_Base"
             android:icon="@drawable/ic_achievements"
             android:label="@string/achievements"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:exported="false">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -115,7 +132,8 @@
             android:name="org.metatrans.commons.engagement.achievements.Activity_Picture"
             android:icon="@drawable/ic_achievements"
             android:label="@string/achievement"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:exported="false">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -125,7 +143,8 @@
 
         <activity
             android:name="org.metatrans.apps.maze.loading.Activity_Loading"
-            android:label="@string/app_mos_name">
+            android:label="@string/app_mos_name"
+            android:exported="false">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />

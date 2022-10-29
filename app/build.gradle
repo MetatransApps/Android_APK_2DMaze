@@ -6,7 +6,7 @@ plugins {
 
 android {
 
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion "30.0.3"
 
     defaultConfig {
@@ -14,10 +14,10 @@ android {
         applicationId "com.maze_squirrel"
 
         minSdkVersion 23
-        targetSdkVersion 30
+        targetSdkVersion 31
 
-        versionCode 116
-        versionName "1.1.6"
+        versionCode 119
+        versionName "1.1.9"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -36,10 +36,20 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
-    lintOptions {
-
+    lint {
         checkReleaseBuilds false
+    }
+
+    namespace 'com.maze_squirrel'
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            println variant.name
+            if (variant.name.contains("release")) {
+                outputFileName = new File("../../../../../../release", "com.maze_squirrel_${variant.versionCode}_ads_home.apk")
+                println outputFileName
+            }
+        }
     }
 }
 
