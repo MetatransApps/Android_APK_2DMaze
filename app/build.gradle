@@ -36,21 +36,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    lint {
-        checkReleaseBuilds false
-    }
 
     namespace 'com.maze_squirrel'
 
-    android.applicationVariants.all { variant ->
-        variant.outputs.all {
-            println variant.name
-            if (variant.name.contains("release")) {
-                outputFileName = new File("../../../../../../release", "com.maze_squirrel_${variant.versionCode}_ads_home.apk")
-                println outputFileName
-            }
-        }
-    }
 }
 
 dependencies {
