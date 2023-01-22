@@ -1,0 +1,2 @@
+Optimizations regarding frames per second (FPS) rate and decreasing even more the app crash rate (bugfixing)
+
